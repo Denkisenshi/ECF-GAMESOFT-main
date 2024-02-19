@@ -1,0 +1,145 @@
+/* Style de base pour la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+/* Style pour la liste des jeux */
+#jeux-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+#jeux-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Alignement vertical */
+}
+
+/* Style pour l'icône d'étoile */
+.favori {
+    margin-right: 10px; /* Espace à droite de l'étoile */
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Style pour l'icône d'étoile en favori */
+.favori.favori-actif {
+    color: yellow; /* Couleur jaune pour l'icône en favori */
+}
+
+/* Style pour le lien de retour à l'accueil */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+/* Style pour la navigation */
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style pour l'en-tête */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Style pour les images */
+img {
+    max-width: 200px;
+}
+
+/* Style pour l'image de fond */
+.background-image {
+    background: url('fond\ 1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style pour la description */
+.description {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+}
+
+/* Style pour le logo */
+#logo-link {
+    text-decoration: none;
+}
+
+
+
+/* Styles pour rendre la page responsive */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

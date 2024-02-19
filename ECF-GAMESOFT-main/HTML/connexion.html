@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+    <header>
+        <h1>Connexion</h1>
+    </header>
+    <main>
+        <form id="loginForm" action="connexion.php" method="post">
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <input type="submit" value="Se connecter">
+        </form>
+        
+        <div id="message"></div>
+    </main>
+    <footer>
+        <a href="formulaire.html">S'inscrire</a>
+        </footer>
+        <footer>
+            <a href="motdepasseoublie.html">Mot de passe oublié ?</a>
+        </footer>
+    <script src="connexion.js"></script>
+</body>
+</html>
+

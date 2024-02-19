@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Utilisateur - Mes Jeux Favoris</title>
+    <link rel="stylesheet" href="espaceutili.css">
+</head>
+<body>
+    <header>
+        <h1>Espace Utilisateur - Mes Jeux Favoris</h1>
+    </header>
+    <main>
+        <h2>Mes Jeux Favoris</h2>
+        <!-- Filtres pour les jeux favoris -->
+        <label for="filtre">Filtrer par statut :</label>
+        <select id="filtre">
+            <option value="Tous">Tous</option>
+            <option value="En cours">En cours</option>
+            <option value="Terminé">Terminé</option>
+        </select>
+        <!-- Tableau pour afficher les jeux favoris -->
+        <table id="jeux-table">
+            <thead>
+                <tr>
+                    <th>Titre du Jeu</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données seront chargées via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <a href="accueil.html">Retour à l'Accueil</a>
+    </footer>
+    <script src="espaceutili.js"></script>
+</body>
+</html>

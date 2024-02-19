@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Création de comptes</title>
+    <link rel="stylesheet" href="formulaire comm prod.css">
+</head>
+<body>
+    <h1>Création de comptes</h1>
+    <form id="createAccountForm">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="accountType">Type de compte :</label>
+<select id="accountType" name="accountType">
+    <option value="Community Manager">Community Manager</option>
+    <option value="Producteur/Productrice">Producteur/Productrice</option>
+</select>
+
+        
+        <button type="submit">Créer le compte</button>
+    </form>
+
+    <script src="formulaire comm prod.js"></script>
+</body>
+</html>

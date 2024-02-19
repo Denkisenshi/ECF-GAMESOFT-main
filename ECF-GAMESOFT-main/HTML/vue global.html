@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Global</title>
+    <link rel="stylesheet" href="vue globale.css">
+    <script src="vue globale.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="formulaire.html">Connexion</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <a href="acceuil.html" id="logo-link"><img src="gamesoft.png" alt="Gamesoft Logo"></a>
+    </header>
+    <div class="background-image">
+        <div class="description">
+            <h1>Gamesoft</h1>
+            <p>Gamesoft est un studio de jeu vidéo français, développant des jeux vidéo. Ils proposent des
+                jeux vidéo principalement de type RPG (jeu vidéo de rôle) : ce type de jeu permet au héros de
+                pouvoir évoluer par l’intermédiaire de combat ou de résolution de quête. </p>
+        </div>
+    </div>
+    <form id="filtres-form">
+        <label for="statut-filter">Statut :</label>
+        <select id="statut-filter" name="statut">
+            <option value="en_cours">En cours</option>
+            <option value="planifie">Planifié</option>
+            <option value="termine">terminer</option>
+        </select>
+    
+        <label for="date-fin-filter">Date de fin :</label>
+        <input type="date" id="date-fin-filter" name="date_fin">
+    
+        <label for="titre-filter">Titre :</label>
+        <input type="text" id="titre-filter" name="titre">
+    
+        <label for="type-filter">Type :</label>
+        <select id="type-filter" name="type">
+            <option value="action">Action</option>
+            <option value="aventure">Aventure</option>
+            <!-- Ajoutez d'autres options si nécessaire -->
+        </select>
+    
+        <button type="button" id="appliquer-filtres">Appliquer</button>
+    </form>
+    
+    <h1>Vue Global</h1>
+    <ul id="jeux-list">
+        <!-- Remplissez cette liste avec les jeux en cours de production et de planification -->
+        <li>
+            <a href="Elden ring.html">Elden Ring</a>
+            <span class="favori" data-id="1">&#9734;</span> <!-- Étoile pleine pour favori -->
+        </li>
+        <li>
+            <a href="ac1.html">Assassin's Creed: Origins</a>
+            <span class="favori" data-id="2">&#9734;</span> <!-- Étoile pleine pour favori -->
+        </li>
+        <!-- Ajoutez d'autres jeux ici -->
+    </ul>
+    
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,40 @@
+probléme technique/(que je ne sais pas regler) non solutionnées:
+
+
+US2:
+ 
+- je n'ai pas trouver comment faire pour que le menu nav "connexion" se change en "deconnexion" lors
+de la connexion d'un compte
+
+
+US7:
+
+- il faudrait donner a l'admin l'autorisation de modifier via l'username de l'utilisateur le mdp 
+dans la base de données par un html/css/js/php relationel
+
+
+
+
+US8: j'ai du refaire le fichier php de xamp car corrompu: ma couter énormement de temps (et d'énergie)
+
+- il faut un serveur smtp send grind aurait pu convenir mais un bug empeche de créer un compte 
+
+- lien de verification qui emmene vers verification.html +token mais non fonctionelle car tester 
+avec amazon ses qui empeche la verification par lien (donc verification depuis le tableau de bord  
+obligatoire)
+
+
+
+us9: vue globale html,css,js et php mais l'interaction avec l'etoile ne fonctionne pas (apparemment 
+ca viendrais du html dans les log mais rien trouver pour le coup)
+
+cela dis la base de données dans le but d ajouter en un jeu en favori en fonction de l'utilisateur a etait implemanter
+
+us11: le tableau est ajouter mais non fonctionelle 
+
+globale: j'ai reussi a créer les role administrateur utilisateur producteur manager mais les differencié je n'ai pas trouver comment faire 
+
+
+
+
+

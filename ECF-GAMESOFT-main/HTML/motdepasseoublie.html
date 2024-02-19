@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mot de passe oublié</title>
+    <link rel="stylesheet" href="motdepasseoublie.css">
+</head>
+<body>
+    <header>
+        <h1>Mot de passe oublié</h1>
+    </header>
+    <main>
+        <p>Entrez votre adresse e-mail pour réinitialiser votre mot de passe :</p>
+        <form id="resetPasswordForm" action="resetpassword.php" method="post">
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <input type="submit" value="Réinitialiser le mot de passe">
+        </form>
+        
+        <div id="resetMessage"></div>
+    </main>
+    <footer>
+        <a href="connexion.html">Retour à la page de connexion</a>
+    </footer>
+    <script src="motdepasseoublie.js"></script>
+</body>
+</html>

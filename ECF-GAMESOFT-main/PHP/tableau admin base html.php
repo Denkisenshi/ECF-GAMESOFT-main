@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau de Bord Administrateur</title>
+    <link rel="stylesheet" href="tableau admin.css"> 
+    <script src="tableau admin.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <h1>Tableau de Bord Administrateur</h1>
+    </header>
+    <main>
+        <h2>Liste des Jeux Vidéo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th data-column="titre">Titre du Jeu</th> <!-- Cette colonne sera triable -->
+                    <th data-column="date_debut">Date de Début de Production</th>
+                    <th data-column="score">Score</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <?php include 'tableau admin.php'; ?>
+            </tbody>
+            
+        </table>
+    </main>
+    <footer>
+        <a href="acceuil.html">Retour à l'Accueil</a>
+    </footer>
+
+</body>
+</html>

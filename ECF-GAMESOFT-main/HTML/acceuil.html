@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gamesoft - Accueil</title>
+    <link rel="stylesheet" href="acceuil.css">
+    <script src="acceuil.js"></script>
+    <script src="verif.js"></script>
+    <script src="actualite.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Accueil</a></li>
+            <li><a href="vue global.html">Vue Global</a></li>
+            <li id="connexion-link"><a href="connexion.html">Connexion</a></li>
+            <li id="deconnexion-link" style="display: none;"><a href="deconnexion.php">Déconnexion</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <a href="acceuil.html" id="logo-link"><img src="gamesoft.png" alt="Logo Gamesoft"></a>
+    </header>
+    <div class="background-image">
+        <div class="description">
+            <h1>Gamesoft</h1>
+            <p>Gamesoft est un studio de jeu vidéo français, développant des jeux vidéo. Ils proposent des
+                jeux vidéo principalement de type RPG (jeu vidéo de rôle) : ce type de jeu permet au héros de
+                pouvoir évoluer par l'intermédiaire de combat ou de résolution de quête. </p>
+        </div>
+    </div>
+    
+    <main>
+        <h1>Fil D'actualités</h1>
+        <section id="fil-actualites">
+
+            <!-- Contenu du fil d'actualités -->
+        </section>
+    </main>
+    <section class="games">
+        <h2>Jeux en cours de développement</h2>
+        Découvrez les futurs blockbusters !
+        <br/><br/>
+        Chez Gamesoft, nous sommes constamment en train de créer des expériences de jeu passionnantes. Voici un aperçu des jeux que nous avons actuellement en développement, qui sont destinés à devenir les prochains grands succès :
+        <br> <br/>
+        "Stars Wars"
+        Préparez-vous à Entrer dans l'univers épique de "Guerre des Étoiles : La Saga Éternelle". Rejoignez la lutte entre la Lumière et l'Ombre, explorez des planètes emblématiques, et incarnez des personnages légendaires. Que la Force soit avec vous dans ce RPG galactique.
+        <br> <br/>
+        "Assassin's Creed : Origins"
+        Explorez les origines de la guilde des assassins dans "Assassin's Creed : Origins". Voyagez à travers les époques, dévoilez des secrets ancestraux, et maîtrisez l'art de l'assassinat dans ce jeu d'action-aventure captivant.
+        <br> <br/>
+        "Elden Ring"
+        Préparez-vous à une aventure épique dans le monde de "Elden Ring". Créé en collaboration avec George RR Martin, ce jeu de rôle d'action promet un univers riche en histoires, des combats épiques et des paysages à couper le souffle.
+        <br> <br/>
+    </section>
+
+    <script>
+        // Récupérez l'état de connexion de l'utilisateur à partir d'une variable ou d'une session PHP
+        const utilisateurConnecte = true; 
+    
+        // Sélectionnez les liens de connexion et de déconnexion
+        const connexionLink = document.getElementById("connexion-link");
+        const deconnexionLink = document.getElementById("deconnexion-link");
+    
+        // Affichez le lien de connexion ou de déconnexion en fonction de l'état de l'utilisateur
+        if (utilisateurConnecte) {
+            connexionLink.style.display = "none";
+            deconnexionLink.style.display = "block";
+        } else {
+            connexionLink.style.display = "block";
+            deconnexionLink.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>

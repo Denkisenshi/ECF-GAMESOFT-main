@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Administrateur - Gamesoft</title>
+    <link rel="stylesheet" href="admin.css"> 
+</head>
+<body>
+    <header>
+        <h1>Création fiche jeux - Gamesoft</h1>
+    </header>
+    <main>
+    <div class="container"><a href="tableau admin base html.php">tableau</a></div> <br />
+        <h2>Ajouter un Jeu Vidéo</h2>
+        <form id="game-form" method="POST" action="admin.php">
+            <label for="titre">Titre du Jeu</label>
+            <input type="text" id="titre" name="titre" placeholder="Nom du Jeu">
+            
+            <label for="description">Description du Jeu</label>
+            <textarea id="description" name="description" placeholder="Description du jeu"></textarea>
+            
+            <label for="studio">Nom du Studio</label>
+            <input type="text" id="studio" name="studio" placeholder="Nom du studio">
+            
+            <label for="images">Galerie d'Images (sélectionnez plusieurs images)</label>
+            <input type="file" id="images" name="images[]" multiple accept="image/*">
+            
+            <label for="support">Support</label>
+            <input type="text" id="support" name="support" placeholder="Ordinateur et/ou Xboite">
+            
+            <label for="poids">Poids (Priorité de développement)</label>
+            <input type="text" id="poids" name="poids" placeholder="Poids du jeu">
+            
+            <label for="score">Score (Nombre d'utilisateurs favoris)</label>
+            <input type="text" id="score" name="score" placeholder="Score du jeu">
+            
+            <label for="moteur">Moteur de Jeu Vidéo</label>
+            <select id="moteur" name="moteur">
+                <option value="Unity">Unity</option>
+                <option value="Unreal">Unreal</option>
+                <option value="CryEngine">CryEngine</option>
+            </select>
+            
+            <label for="date_debut">Date de Création</label>
+            <input type="date" id="date_debut" name="date_debut">
+            
+            <label for="dateMiseAJour">Date de Dernière Mise à Jour</label>
+            <input type="date" id="dateMiseAJour" name="dateMiseAJour">
+            
+            <label for="date_fin">Date Estimée de Fin de Création</label>
+            <input type="date" id="date_fin" name="date_fin">
+            
+            <label for="budget">Budget (Montant maximal)</label>
+            <input type="text" id="budget" name="budget" placeholder="Budget du jeu">
+            
+            <label for="statut">Statut</label>
+            <input type="text" id="statut" name="statut" placeholder="Statut du jeu">
+            
+            <label for="type">Type (RPG, MMO, Aventure, etc.)</label>
+            <input type="text" id="type" name="type" placeholder="Type du jeu">
+            
+            <label for="joueurs">Nombre de Joueurs</label>
+            <input type="text" id="joueurs" name="joueurs" placeholder="Nombre de joueurs">
+            
+            <button type="submit">Ajouter le Jeu</button>
+        </form>
+        
+    </main>
+    <footer>
+        <a href="acceuil.html">Retour à l'Accueil</a>
+    </footer>
+</body>
+</html>
+
+
+
+

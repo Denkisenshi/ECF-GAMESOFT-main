@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Producteur/Productrice - Gamesoft</title>
+    <link rel="stylesheet" href="espaceprod.css"> 
+</head>
+<body>
+    <header>
+        <h1>Espace Producteur/Productrice - Gamesoft</h1>
+    </header>
+    <main>
+        <h2>Jeux Vidéo</h2>
+        <!-- Filtre pour calculer le coût total -->
+        <label for="statut-filter">Filtrer par statut :</label>
+        <select id="statut-filter">
+            <option value="Tous">Tous</option>
+            <option value="En cours">En cours</option>
+            <option value="Terminé">Terminé</option>
+        </select>
+        <p>Coût total des jeux vidéo : <span id="cout-total"></span></p>
+        <!-- Tableau pour afficher les jeux vidéo -->
+        <table id="jeux-table">
+            <thead>
+                <tr>
+                    <th>Titre du Jeu</th>
+                    <th>Budget</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les données seront chargées via JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <main>
+        <h2>Modifier le Budget d'un Jeu Vidéo</h2>
+        <form id="budget-form">
+            <label for="titre">Nom du Jeu Vidéo</label>
+            <input type="text" id="titre" name="titre" placeholder="Nom du jeu vidéo">
+            
+            <label for="budget">Nouveau Budget</label>
+            <input type="text" id="budget" name="budget" placeholder="Nouveau budget du jeu">
+            
+            <label for="statut">Nouveau Statut</label>
+            <input type="text" id="statut" name="statut" placeholder="Nouveau statut du jeu">
+            
+            <label for="date_fin">Nouvelle Date de Fin</label>
+            <input type="date" id="date_fin" name="date_fin">
+            
+            <label for="commentaire">Commentaire</label>
+            <textarea id="commentaire" name="commentaire" placeholder="Raison de la modification"></textarea>
+            
+            <button type="submit">Modifier</button>
+        </form>
+    </main>
+    
+    <footer>
+        <a href="acceuil.html">Retour à l'Accueil</a>
+    </footer>
+    <script src="espaceprod.js"></script>
+</body>
+</html>
